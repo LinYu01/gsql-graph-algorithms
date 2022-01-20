@@ -1,0 +1,41 @@
+algorithm:
+  name: Fast Random Projection
+  filename: "tg_cosine_nbor_ap.gsql"
+  sha_id: 123456abcdef
+  description: FastRP is a very cool embedding algorithm.
+  schema_constraints: This algorithm requires that you have a LIST attribute of type DOUBLE/FLOAT on the target vertices!
+  dependencies:
+    queries:
+      - file: "{@}/tg_cosine_nbor_ap_sub.gsql"
+        sha_id: 123456
+    ExprFunctions:
+      sha_id: 456
+    ExprUtils:
+      sha_id: 567
+  version: lib3.0
+previous_versions:
+  version_2:
+    sha_id: 12345abde
+    dependencies:
+      queries:
+        - file: "{@}/tg_fastrp_preprocessing.gsql"
+          sha_id: 12345
+      ExprFunctions:
+        sha_id: 456
+      ExprUtils:
+        sha_id: 567
+    version: lib2.0
+  version_1:
+    sha_id: 1234abcd
+    description: This version is not as cool as the latest version.
+    schema_constraints: This version has no schema requirements.
+    dependencies:
+      queries:
+        - file: "{@}/tg_fastrp_preprocessing.gsql"
+          sha_id: 1234
+
+      ExprFunctions:
+        sha_id: 455
+      ExprUtils:
+        sha_id: 566
+    version: lib1.0

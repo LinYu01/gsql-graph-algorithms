@@ -8,11 +8,11 @@
 
   algorithm_navigation:
     category:
-      pattern: "{@}/algorithms/tg_category*.yml"
+      pattern: "{@}/algorithms/.../tg_category*.yml"
     sub_category:
       pattern: "{&category}/.../tg_sub*.yml"
     algorithm:
-      pattern: "[{&category}|{&sub_category}/.../tg_algo*.yml"
+      pattern: "{&category}/.../tg_algo*.yml"
   global_ExprFunctions:
     pattern: "{@}/UDF/tg_ExprFunctions.hpp"
   global_ExprUtils:
