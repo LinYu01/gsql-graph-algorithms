@@ -1,5 +1,5 @@
 algorithm:
-  name: Fast Random Projection
+  name: FastRP
   filename: "tg_cosine_nbor_ap.gsql"
   sha_id: 123456abcdef
   description: FastRP is a very cool embedding algorithm.
